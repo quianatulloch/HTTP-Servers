@@ -28,3 +28,6 @@ HTTP and HTTPS URIs look almost the same. The difference is that when a client g
 **Hostname**
 
 In an HTTP URI, the next thing that appears after the scheme is a hostname — something like www.udacity.com or localhost. This tells the client which server to connect to. A hostname can only appear after a URI scheme that supports it, such as http or https. In these URIs, there will always be a :// between the scheme and hostname.
+
+**Path**
+The path tells the server which resource the client is looking for. 
