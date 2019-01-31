@@ -15,9 +15,9 @@ https://en.wikipedia.org/wiki/Fish
 ~~~
 This URI has three visible parts, separated by a little bit of punctuation:
 
-  * https is the scheme;
-  * en.wikipedia.org is the hostname;
-  * /wiki/Fish is the path
+  * **https** is the scheme;
+  * **en.wikipedia.org** is the hostname;
+  * **/wiki/Fish** is the path
   
 **Scheme**
 
