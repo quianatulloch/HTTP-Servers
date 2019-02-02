@@ -30,4 +30,20 @@ HTTP and HTTPS URIs look almost the same. The difference is that when a client g
 In an HTTP URI, the next thing that appears after the scheme is a hostname — something like www.udacity.com or localhost. This tells the client which server to connect to. A hostname can only appear after a URI scheme that supports it, such as http or https. In these URIs, there will always be a :// between the scheme and hostname.
 
 **Path**
-The path tells the server which resource the client is looking for. 
+The path tells the server which resource the client is looking for. The server interprets the path to figure out what resource to send. In the case of a search query, it sends back a search result page that maybe never existed before. When you write a URI without a path, such as http://udacity.com, the browser fills in the default path, which is written with a single slash. That's why http://udacity.com is the same as http://udacity.com/.
+
+with a single slash. That's why http://udacity.com is the same as http://udacity.com/ (with a slash on the end). The path written with just a single slash is also called the root. It's the root of the resources served by the web server. 
+## Relative URI references
+~~~
+<a href="cliffsofinsanity.png">cliffsofinsanity.png</a>
+~~~
+URIs like this one don't have a scheme, or a hostname — just a path. This is a relative URI reference. It's "relative" to the context in which it appears — specifically, the page it's on. This URI doesn't include the hostname or port of the server it's on, but the browser can figure that out from context. 
+
+**Other URI parts**
+
+If you follow these links in your browser, it will fetch the same page from Wikipedia's web server. But the second one displays the page scrolled to the section about the discovery of oxygen. The part of the URI after the # sign is called a fragment. The browser doesn't even send it to the web server. It lets a link point to a specific named part of a resource; in HTML pages it links to an element by id.
+
+In contrast, consider this Google Search URI:
+
+ * https://www.google.com/search?q=fish
+The ?q=fish is a query part of the URI. This does get sent to the server.
