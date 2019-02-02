@@ -54,3 +54,8 @@ A full HTTP or HTTPS URI includes the hostname of the web server, like www.udaci
 
 Some systems don't have the **host** command, but do have a similar command called **nslookup**. This command also displays the IP address for the hostname you give it; but it also shows the IP address of the DNS server that's giving it the answer.
 IP addresses come in two different varieties: the older **IPv4** and the newer **IPv6**.
+
+## Ports
+
+HTTP URIs imply a port number of **80**, whereas HTTPS URIs imply a port number of **443***. All of the network traffic that computers send and receive is split up into messages called **packets**. Each packet has the IP addresses of the computer that sent it, and the computer that receives it. Port numbers distinguish *programs* on computers.
+
