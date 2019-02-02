@@ -30,6 +30,7 @@ HTTP and HTTPS URIs look almost the same. The difference is that when a client g
 In an HTTP URI, the next thing that appears after the scheme is a hostname — something like www.udacity.com or localhost. This tells the client which server to connect to. A hostname can only appear after a URI scheme that supports it, such as http or https. In these URIs, there will always be a :// between the scheme and hostname.
 
 **Path**
+
 The path tells the server which resource the client is looking for. The server interprets the path to figure out what resource to send. In the case of a search query, it sends back a search result page that maybe never existed before. When you write a URI without a path, such as http://udacity.com, the browser fills in the default path, which is written with a single slash. That's why http://udacity.com is the same as http://udacity.com/.
 
 with a single slash. That's why http://udacity.com is the same as http://udacity.com/ (with a slash on the end). The path written with just a single slash is also called the root. It's the root of the resources served by the web server. 
