@@ -47,3 +47,9 @@ In contrast, consider this Google Search URI:
 
  * https://www.google.com/search?q=fish
 The ?q=fish is a query part of the URI. This does get sent to the server.
+# Hostnames and ports
+## Hostnames
+A full HTTP or HTTPS URI includes the hostname of the web server, like www.udacity.com or www.un.int. A hostname in a URI can also be an IP address: for instance, if you put http://216.58.194.174/ in your browser, you'll end up at Google. The Internet tells computers apart by their IP addresses; every piece of network traffic on the Internet is labeled with the IP addresses of the sending and receiving computers. Your operating system's network configuration uses the Domain Name Service **(DNS)** — a set of servers maintained by Internet Service Providers **(ISPs)** and other network users — to look up hostnames and get back IP addresses.
+
+Some systems don't have the **host** command, but do have a similar command called **nslookup**. This command also displays the IP address for the hostname you give it; but it also shows the IP address of the DNS server that's giving it the answer.
+IP addresses come in two different varieties: the older **IPv4** and the newer **IPv6**.
