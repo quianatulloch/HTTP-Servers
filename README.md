@@ -59,3 +59,11 @@ IP addresses come in two different varieties: the older **IPv4** and the newer *
 
 HTTP URIs imply a port number of **80**, whereas HTTPS URIs imply a port number of **443**. All of the network traffic that computers send and receive is split up into messages called **packets**. Each packet has the IP addresses of the computer that sent it, and the computer that receives it. Port numbers distinguish *programs* on computers.
 
+## HTTP GET Request
+
+"GET /readme.png HTTP/1.1" - Text of the request line that the browser sent to the server.
+**GET** is the method or **HTTP verb** being used; says what kind of request is being made. GET is the verb that clients use when they want a server to send a resource (web page or image).
+
+/readme.png - the path of the resource being reuqested
+
+HTTP/1.1 - protocol of the request; the dialect of HTTP it's speaking in and this is the most common version
