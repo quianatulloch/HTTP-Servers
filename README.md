@@ -5,6 +5,18 @@ A server is just a program that accepts connections from other programs on the n
 
 **404** is the HTTP status code for "Not Found".
 
+# Running your first web server
+
+Let's get started with the demo web server:
+
+1) Open up a terminal.
+
+2) cd into a directory that has some files in it (maybe a directory containing some text files, HTML files, or images ).
+
+3) Run python3 -m http.server 8000 in your terminal.
+
+A server is just a program that accepts connections from other programs on the network.
+
 # Parts of a URI
 A web address is also called a URI for Uniform Resource Identifier. From a web user's view, a URI is a piece of text that you put into your web browser that tells it what page to go to. A URI is a name for a resource — such as a Wikipedia article, or a data source like the Google Maps API. URIs are made out of several different parts, each of which has its own syntax.
 
@@ -59,7 +71,7 @@ IP addresses come in two different varieties: the older **IPv4** and the newer *
 
 HTTP URIs imply a port number of **80**, whereas HTTPS URIs imply a port number of **443**. All of the network traffic that computers send and receive is split up into messages called **packets**. Each packet has the IP addresses of the computer that sent it, and the computer that receives it. Port numbers distinguish *programs* on computers.
 
-## HTTP GET Request
+# HTTP GET Request
 
 "GET /readme.png HTTP/1.1" - Text of the request line that the browser sent to the server.
 **GET** is the method or **HTTP verb** being used; says what kind of request is being made. GET is the verb that clients use when they want a server to send a resource (web page or image).
